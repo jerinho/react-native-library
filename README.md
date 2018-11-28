@@ -26,8 +26,8 @@
 1. copy this repo to a local working directory. you may rename it as you want. from now it it your library project directory
 2. take out directory `app`. that is the directory for application development. put it somewhere else and rename it if you going to use it later. or get rid of it if you don't
 3. edit `android/local.properties`. set `sdk.dir` to point to your android sdk directory location
-4. edit `package.json`. set `name` to suit your preference. keep prefix `react-native-`. make sure it is not yet used in npmjs.com in case if you plan to publish it later
-5. open up console (command prompt @ cmd)
+4. edit `package.json`. change `name` to suit your preference and keep prefix `react-native-`. in case if you plan to publish it as online package later, make sure it is not yet registered <a href='https://www.npmjs.com/'>here</a>
+5. open up console (command prompt)
 6. go to library project directory
 7. `yarn`
 8. `yarn link`
@@ -47,22 +47,22 @@ protected List<ReactPackage> getPackages() {
 }
 ```
 4. open up `android/settings.gradle`
-5. append below lines with your library name from `package.json` in the blank
+5. append below lines with your library name in the blank
 ```
 include ':___'
 project(':___').projectDir = new File(rootProject.projectDir, '../node_modules/___/android')
 ```
 6. open up `android/app/build.gradle`
-7. append `compile project(':___')` below line to the bottom with your library name in the blank
+7. append `compile project(':___')` to the bottom with your library name in the blank
     
 # run
 1. connect device or run android simulator
 2. go to working directory from console
 3. `react-native run-android`
-4. expected : metro bundler console window is running and app is running showing a greeting message
+4. expected metro bundler console window is running and app is running showing a greeting message
 
-# how to use it ?
-- hopefully i'll have time for this. maybe next time. for now, please refer <a href='https://facebook.github.io/react-native/docs/native-modules-android'>here
+# how to use ?
+- hopefully i have time for this. maybe next time. for now, please refer <a href='https://facebook.github.io/react-native/docs/native-modules-android'>here</a>
 
 # please
 - don't hesitate to submit your issue here
