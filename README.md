@@ -63,7 +63,7 @@ project(':___').projectDir = new File(rootProject.projectDir, '../node_modules/_
 4. expected metro bundler console window is running and app is running showing a greeting message
 
 # how to use ?
-- hopefully i have time for this. maybe next time. for now, please refer <a target='_blank' href='https://facebook.github.io/react-native/docs/native-modules-android'>here</a>
+- i wish i have time for this. maybe next time. for now, please refer <a target='_blank' href='https://facebook.github.io/react-native/docs/native-modules-android'>here</a>
 
 # please
 - don't hesitate to submit your issue here
