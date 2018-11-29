@@ -34,21 +34,23 @@
 9. go to application project directory
 10. if it is the one from repo, `yarn`
 11. if it is an existing project, follow these
+
 > 1. open up `android/app/src/main/java/.../MainApplication.java`
 > 2. insert `import com.reactlibrary.ReactLibraryPackage;` to the bottom of the import list
 > 3. append `new ReactLibraryPackage()` as an argument of `Arrays.<ReactPackage>asList()` inside `getPackages` function
-```
-protected List<ReactPackage> getPackages() {
-  return Arrays.<ReactPackage>asList(new MainReactPackage(), new ReactLibraryPackage());
-}
-```
+> ```
+> protected List<ReactPackage> getPackages() {
+>   return Arrays.<ReactPackage>asList(new MainReactPackage(), new ReactLibraryPackage());
+> }
+> ```
+
 12. if your library name is changed or for existing project, follow these
 > 1. open up `android/settings.gradle`
 > 2. append or edit below lines with your library name in the blank
-```
-include ':___'
-project(':___').projectDir = new File(rootProject.projectDir, '../node_modules/___/android')
-```
+> ```
+> include ':___'
+> project(':___').projectDir = new File(rootProject.projectDir, '../node_modules/___/android')
+> ```
 > 3. open up `android/app/build.gradle`
 > 4. append or edit `compile project(':___')` to the bottom with your library name in the blank
 13. `yarn link ___` with name of your library from `package.json` in the blank
