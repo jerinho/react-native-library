@@ -1,6 +1,6 @@
-rootProject.name = 'test'
+rootProject.name = 'app'
 
 include ':app'
 
-include ':react-native-mylibrary'
-project(':react-native-mylibrary').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-mylibrary/android')
+include ':react-native-lib'
+project(':react-native-lib').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-lib/android')
